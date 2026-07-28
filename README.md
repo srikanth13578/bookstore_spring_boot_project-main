@@ -32,7 +32,7 @@ New Book Registration
 
 
 ## ⚙️ How to Run
-1. **Database:** Create a MySQL database named `bookstore_db`.
+1. **Database:** Create a MySQL database named `book`.
 2. **Configuration:** Update `src/main/resources/application.properties` with your MySQL `username` and `password`.
 3. **Execution:**
    ```bash
