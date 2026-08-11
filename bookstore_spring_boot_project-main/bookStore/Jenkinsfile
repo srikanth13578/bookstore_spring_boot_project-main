@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('🔄 Fetch Code') {
+            steps {
+                echo 'Pulling the latest codebase layout from GitHub...'
+            }
+        }
+
+        stage('🏗️ Docker Build') {
+            steps {
+                echo 'Compiling backend code and building production images...'
+                sh 'docker compose build'
+            }
+        }
+
+        stage('🚀 Live Deploy') {
+            steps {
+                echo 'Safely restarting containerized application services...'
+                sh 'docker compose down'
+                sh 'docker compose up -d'
+                echo 'Bookstore system is successfully updated and live on Port 1001!'
+            }
+        }
+    }
+}
