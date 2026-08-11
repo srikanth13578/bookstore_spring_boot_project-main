@@ -8,18 +8,18 @@ pipeline {
             }
         }
 
-        stage('🏗️ Docker Build') {
+        stage('Docker Build') {
             steps {
                 echo 'Compiling backend code and building production images...'
-                sh 'docker compose build'
+                sh 'docker-compose build'  
             }
         }
 
         stage('🚀 Live Deploy') {
             steps {
                 echo 'Safely restarting containerized application services...'
-                sh 'docker compose down'
-                sh 'docker compose up -d'
+                sh 'docker-compose down'
+                sh 'docker-compose up -d'
                 echo 'Bookstore system is successfully updated and live on Port 1001!'
             }
         }
