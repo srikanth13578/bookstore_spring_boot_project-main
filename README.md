@@ -2,8 +2,8 @@
 
 An academic project built to manage book inventory and personalized user collections. This application demonstrates a full-stack Java implementation focusing on relational data management and dynamic server-side rendering.
 
-## 🔗 Live Production Deployment
-🚀 **View the Application Live on the Cloud:** [https://bookstorespringbootproject-main-production.up.railway.app/)
+🚀 **Live App URL:** [Click Here to View Application](https://railway.app)
+
 
 ---
 
